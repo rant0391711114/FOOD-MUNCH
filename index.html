@@ -1,0 +1,265 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css"> 
+   </head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="file:///C:/Users/sai/Desktop/pro/images/Navbar%20Logo.png" class="food-munch-logo" alt="My Restaurant Logo"/>
+            </a>
+            <div class="navbar-nav">
+                <a class="nav-link active" id="navItem1" href="#wcuSection">Why Choose Us?</a>
+                <a class="nav-link" href="#exploreMenuSection" id="navItem2">Explore Menu</a>
+                <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Delivery & Payment</a>
+                <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner-section-bg-container">
+        <div class="text-center">
+            <h1 class="banner-heading">Get Delicious Food Anytime</h1>
+            <p class="banner-caption">Eat Smart & Healthy</p>
+            <a href="#exploreMenuSection" class="custom-button">View Menu</a>
+            <button class="custom-outline-button">Order Now</button>
+        </div>
+    </div>
+
+    <div class="wcu-section" id="wcuSection">
+        <div class="container">
+            <h1 class="wcu-section-heading">Why Choose Us?</h1>
+            <p class="wcu-section-description">We use both original recipes and classic versions of famous food items.</p>
+            <div class="wcu-cards">
+                <div class="wcu-card">
+                    <img src="file:///C:/Users/sai/Desktop/pro/images/Food%20Service.png" class="wcu-card-image" alt="Food Service"/>
+                    <h2 class="wcu-card-title">Food Service</h2>
+                    <p class="wcu-card-description">Experience fine dining at the comfort of your home. All our orders are carefully packed and arranged to give you nothing less than perfect.</p>
+                </div>
+                <div class="wcu-card">
+                    <img src="file:///C:/Users/sai/Desktop/pro/images/fruits-img.png" class="wcu-card-image" alt="Fresh Food"/>
+                    <h2 class="wcu-card-title">Fresh Food</h2>
+                    <p class="wcu-card-description">The Fresh Food group provides fresh-cut fruits and vegetables directly picked from our partner farms and farm houses so that you always get them tree to plate.</p>
+                </div>
+                <div class="wcu-card">
+                    <img src="file:///C:/Users/sai/Desktop/pro/images/Best%20Offers.png" class="wcu-card-image" alt="Best Offers"/>
+                    <h2 class="wcu-card-title">Best Offers</h2>
+                    <p class="wcu-card-description">Food Coupons & Offers up to <span class="offers">50% OFF</span> and Exclusive Promo Codes on All Online Food Orders.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="explore-menu-section" id="exploreMenuSection">
+        <div class="container">
+            <h1 class="menu-section-heading">Explore Menu</h1>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="file:///C:/Users/sai/Desktop/pro/img/Non-Veg%20Starters.jpg" class="menu-item-image" alt="Non-Veg Starters"/>
+                    <h2 class="menu-card-title">Non-Veg Starters</h2>
+                    <a href="#" class="menu-item-link" onclick="toggleDetails('nonVegStartersDetails')">View All</a>
+                    <div id="nonVegStartersDetails" class="details-container">
+                        <p><strong>Description:</strong> A selection of delicious non-vegetarian starters.</p>
+                        <p><strong>Ingredients:</strong> Chicken, Spices, Herbs, etc.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="file:///C:/Users/sai/Desktop/pro/img/Veg%20Starters.jpg" class="menu-item-image" alt="Veg Starters"/>
+                    <h2 class="menu-card-title">Veg Starters</h2>
+                    <a href="#" class="menu-item-link" onclick="toggleDetails('vegStartersDetails')">View All</a>
+                    <div id="vegStartersDetails" class="details-container">
+                        <p><strong>Description:</strong> A variety of tasty vegetarian starters.</p>
+                        <p><strong>Ingredients:</strong> Vegetables, Spices, Herbs, etc.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="file:///C:/Users/sai/Desktop/pro/img/Soups.jpg" class="menu-item-image" alt="Soups"/>
+                    <h2 class="menu-card-title">Soups</h2>
+                    <a href="#" class="menu-item-link" onclick="toggleDetails('soupsDetails')">View All</a>
+                    <div id="soupsDetails" class="details-container">
+                        <p><strong>Description:</strong> A selection of warm and comforting soups.</p>
+                        <p><strong>Ingredients:</strong> Broth, Vegetables, Spices, etc.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="file:///C:/Users/sai/Desktop/pro/img/Fish%20&%20Seafood.jpg" class="menu-item-image" alt="Fish & Seafood"/>
+                    <h2 class="menu-card-title">Fish & Seafood</h2>
+                    <a href="#" class="menu-item-link" onclick="toggleDetails('fishSeafoodDetails')">View All</a>
+                    <div id="fishSeafoodDetails" class="details-container">
+                        <p><strong>Description:</strong> Fresh fish and seafood dishes.</p>
+                        <p><strong>Ingredients:</strong> Fish, Shellfish, Spices, etc.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="file:///C:/Users/sai/Desktop/pro/img/Main%20Course.jpg" class="menu-item-image" alt="Main Course"/>
+                    <h2 class="menu-card-title">Main Course</h2>
+                    <a href="#" class="menu-item-link" onclick="toggleDetails('mainCourseDetails')">View All</a>
+                    <div id="mainCourseDetails" class="details-container">
+                        <p><strong>Description:</strong> A variety of hearty main courses.</p>
+                        <p><strong>Ingredients:</strong> Meat, Vegetables, Spices, etc.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="file:///C:/Users/sai/Desktop/pro/img/Noodles.jpg" class="menu-item-image" alt="Noodles"/>
+                    <h2 class="menu-card-title">Noodles</h2>
+                    <a href="#" class="menu-item-link" onclick="toggleDetails('noodlesDetails')">View All</a>
+                    <div id="noodlesDetails" class="details-container">
+                        <p><strong>Description:</strong> Delicious noodles with various sauces.</p>
+                        <p><strong>Ingredients:</strong> Noodles, Vegetables, Sauces, etc.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="file:///C:/Users/sai/Desktop/pro/img/Salads.jpg" class="menu-item-image" alt="Salads"/>
+                    <h2 class="menu-card-title">Salads</h2>
+                    <a href="#" class="menu-item-link" onclick="toggleDetails('saladsDetails')">View All</a>
+                    <div id="saladsDetails" class="details-container">
+                        <p><strong>Description:</strong> Fresh and healthy salads.</p>
+                        <p><strong>Ingredients:</strong> Lettuce, Vegetables, Dressings, etc.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="file:///C:/Users/sai/Desktop/pro/img/Desserts.jpg" class="menu-item-image" alt="Desserts"/>
+                    <h2 class="menu-card-title">Desserts</h2>
+                    <a href="#" class="menu-item-link" onclick="toggleDetails('dessertsDetails')">View All</a>
+                    <div id="dessertsDetails" class="details-container">
+                        <p><strong>Description:</strong> Sweet and delightful desserts.</p>
+                        <p><strong>Ingredients:</strong> Sugar, Flour, Fruits, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="healthy-food-section">
+        <div class="container">
+            <div class="healthy-food-content">
+                <div class="healthy-food-image">
+                    <img src="file:///C:/Users/sai/Desktop/pro/img/Fresh,%20Healthy,%20Organic,%20Delicious%20Fruits.jpg" class="healthy-food-section-img" alt="Healthy Food"/>
+                </div>
+                <div class="healthy-food-text">
+                    <h1 class="healthy-food-section-heading">Fresh, Healthy, Organic, Delicious Fruits</h1>
+                    <p class="healthy-food-section-description">Say no to harmful chemicals and go fully organic with our range of fresh fruits and veggies. Pamper your body and your senses with the true and unadulterated gifts from mother nature.</p>
+                    <button class="custom-button">Watch Video</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="delivery-and-payment-section" id="deliveryPaymentSection">
+        <div class="container">
+            <div>
+                <div style="text-align: center;">
+                    <img src="file:///C:/Users/sai/Desktop/pro/img/offer.jpg" class="delivery-and-payment-section-img" alt="Delivery and Payment"/>
+                </div>
+            </div>
+            <div>
+                <h1 class="delivery-and-payment-section-heading">Delivery and Payment</h1>
+                <p class="delivery-and-payment-section-description">Enjoy hassle-free payment with the plenitude of payment options available for you. Get live tracking and locate your food on a live map. It's quite a sight to see your food arrive at your door. Plus, you get a 5% discount on every order every time you pay online.</p>
+                <button class="custom-button" id="orderNowButton">Order Now</button>
+                <div class="payment-icons" id="paymentIcons" style="display: none;">
+                                       <img src="C:/Users/sai/Desktop/pro/images/Visa.png" class="payment-card-img" alt="Visa"/>
+                    <img src="C:/Users/sai/Desktop/pro/images/MasterCard.png" class="payment-card-img" alt="MasterCard"/>
+                    <img src="C:/Users/sai/Desktop/pro/images/PayPal.png" class="payment-card-img" alt="PayPal"/>
+                    <img src="C:/Users/sai/Desktop/pro/images/American Express.png" class="payment-card-img" alt="American Express"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="thanking-customers-section">
+        <div class="container">
+            <div class="thanking-customers-content">
+                <div class="thanking-customers-text">
+                    <h1 class="thanking-customers-section-heading">Thank you for being a valuable customer to us.</h1>
+                    <p class="thanking-customers-section-description">We have a surprise gift for you</p>
+                    <button type="button" class="custom-button" id="redeemGiftButton">Redeem Gift</button>
+                    <div class="modal" id="giftModal">
+                        <div class="modal-content">
+                            <span class="close" id="closeModal">&times;</span>
+                            <h5 class="modal-title">Gift Voucher</h5>
+                            <img src="C:/Users/sai/Desktop/pro/images/Gift Voucher.png" class="gift-voucher-img" alt="Gift Voucher"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="thanking-customers-image">
+                    <img src="file:///C:/Users/sai/Desktop/pro/img/gift.jpg" class="thanking-customers-section-img" alt="Thank You"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="follow-us-section" id="followUsSection">
+        <div class="container">
+            <h1 class="follow-us-section-heading">Follow Us</h1>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yourprofile" class="follow-us-icon-container" title="Follow us on Facebook">
+                    <i class="fab fa-facebook icon"></i>
+                </a>
+                <a href="https://www.instagram.com/yourprofile" class="follow-us-icon-container" title="Follow us on Instagram">
+                    <i class="fab fa-instagram icon"></i>
+                </a>
+                <a href="https://plus.google.com/yourprofile" class="follow-us-icon-container" title="Follow us on Google">
+                    <i class="fab fa-google icon"></i>
+                </a>
+                <a href="mailto:myresturant0391711114@gmail.com" class="follow-us-icon-container" title="Email us">
+                    <i class="fas fa-envelope icon"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-section">
+        <div class="container">
+            <img src="C:/Users/sai/Desktop/pro/images/Footer Logo.png" class="food-munch-logo" alt="My Restaurant Logo"/>
+            <h1 class="footer-section-mail-id">myresturant0391711114@gmail.com</h1>
+            <p class="footer-section-address">27-1-272/2, chruch back side opposite chicken shop in gajuwaka</p>
+        </div>
+    </footer>
+
+    <script>
+        var modal = document.getElementById("giftModal");
+        var btn = document.getElementById("redeemGiftButton");
+        var span = document.getElementById("closeModal");
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        var orderNowButton = document.getElementById("orderNowButton");
+        var paymentIcons = document.getElementById("paymentIcons");
+
+        orderNowButton.onclick = function() {
+            if (paymentIcons.style.display === "none" || paymentIcons.style.display === "") {
+                paymentIcons.style.display = "block";
+            } else {
+                paymentIcons.style.display = "none";
+            }
+        }
+
+        function toggleDetails(detailsId) {
+            var detailsContainer = document.getElementById(detailsId);
+            if (detailsContainer.style.display === "none" || detailsContainer.style.display === "") {
+                detailsContainer.style.display = "block";
+            } else {
+                detailsContainer.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
